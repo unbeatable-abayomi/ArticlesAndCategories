@@ -33,6 +33,7 @@ namespace ArticlesAndCategories
             Console.WriteLine($"======Executing Linq Using Method Syntax================");
             foreach (var item in methodSyntaxResult)
             {
+                Console.WriteLine($"========{item.CategoryName}========");
                 //  Console.WriteLine(item);
                 Console.WriteLine($"Title: {item.Title}\n Body: {item.Body}\n CategoryName: {item.CategoryName}\n");
             }
@@ -51,7 +52,7 @@ namespace ArticlesAndCategories
             Console.WriteLine($"======Executing Linq Using Query Syntax================");
             foreach (var item in querySyntaxResult)
             {
-              
+                Console.WriteLine($"========{item.CategoryName}========");
                 //  Console.WriteLine(item);
                 Console.WriteLine($"Title: {item.Title}\n Body: {item.Body}\n CategoryName: {item.CategoryName}\n");
             }
